@@ -6,7 +6,7 @@ LABEL Description="This image is PHP-FPM 7.1 running on Alpine" Vendor="Tommy La
 
 # Install other needed extensions
 RUN	set -x \
-	&& docker-php-ext-install mysqli
+	&& docker-php-ext-install mysqli pdo_mysql
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php \

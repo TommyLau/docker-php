@@ -6,9 +6,10 @@ docker-php is a PHP-FPM Server boxed in a Docker image built by [Tommy Lau](http
 
 This image is a php web development environment cooked based on the offical docker image `php:7.1-fpm-alpine`, and with the following enhancements.
 
-Enabled:
+Enabled extensions:
 
-- Enabled mysqli
+- mysqli
+- pdo_mysql
 
 ```bash
 docker pull tommylau/php:7.1

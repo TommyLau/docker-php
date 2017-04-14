@@ -8,6 +8,7 @@ This image is a php web development environment cooked based on the offical dock
 
 Enabled extensions:
 
+- intl
 - mysqli
 - pdo_mysql
 

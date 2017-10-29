@@ -15,4 +15,7 @@ RUN	set -x \
 RUN curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer
 
+# Disable PHP expose
+RUN echo "expose_php = Off" > /usr/local/etc/php/conf.d/tommy-expose-php.ini
+
 WORKDIR /var/www
